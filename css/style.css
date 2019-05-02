@@ -1190,13 +1190,19 @@ THE 10 ITEMS aka PORTFOLIO2
 /*--------------------------------------------------------------
 # Tables
 --------------------------------------------------------------*/
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #ffe6e6;
+}
+
+
 .table-small {
   border-color: #333;
   border-radius: 2px;
   margin: 0 0 20px 0;
 }
 
-.table-small .table-col-35 {width: 35%;}
+.table-small .table-col-7 {width: 7%;}
 .table-small .table-col-8 {width: 8%;}
 .table-small .table-col-17 {width: 17%;}
 .table-small .table-col-23 {width: 23%;}
@@ -1218,12 +1224,57 @@ THE 10 ITEMS aka PORTFOLIO2
   font-size: 0.8rem;
 }
 
+.table-small thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-small tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table-small {
+  border-color: #333;
+  border-radius: 2px;
+  margin: 0 0 20px 0;
+}
+
+.table-med .table-col-7 {width: 7%;}
+.table-med .table-col-8 {width: 8%;}
+.table-med .table-col-17 {width: 17%;}
+.table-med .table-col-23 {width: 23%;}
+.table-med .table-col-25 {width: 25%;}
+.table-med .table-col-50 {width: 50%;}
+
+.table-med > tbody > tr > td,
+.table-med > thead > tr > th {
+  padding: 2px 5px;
+  margin: 0;
+}
+
+.table-med > thead > tr > th {
+  font-size: 0.95rem;
+  border-top: none;
+}
+
+.table-med > tbody > tr > td{
+  font-size: 0.9rem;
+}
+
+.table-med thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-med tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
 .table {
   border-color: #ce0000;
   border-radius: 2px;
   margin: 0 0 20px 0;
 }
-
 
 .table > tbody > tr > td,
 .table > thead > tr > th {
@@ -1241,15 +1292,4 @@ THE 10 ITEMS aka PORTFOLIO2
 }
 
 
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #ffe6e6;
-}
 
-.table-small thead th {
-  vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
-}
-
-.table-small tbody + tbody {
-  border-top: 2px solid #dee2e6;
-}
