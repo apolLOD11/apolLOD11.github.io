@@ -445,8 +445,8 @@ HERO 2
 }
 
 .nav-menu ul li a:hover {
-  background: #0000;
-  color: #fff;
+  background: #e7e7e7;
+  color: #ce0000;
 }
 
 .nav-menu ul ul {
