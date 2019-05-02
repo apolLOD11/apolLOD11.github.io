@@ -1196,7 +1196,7 @@ THE 10 ITEMS aka PORTFOLIO2
   margin: 0 0 20px 0;
 }
 
-.table-small .table-col-7 {width: 7%;}
+.table-small .table-col-35 {width: 35%;}
 .table-small .table-col-8 {width: 8%;}
 .table-small .table-col-17 {width: 17%;}
 .table-small .table-col-23 {width: 23%;}
@@ -1218,25 +1218,25 @@ THE 10 ITEMS aka PORTFOLIO2
   font-size: 0.8rem;
 }
 
-.table-med {
-  border-color: #333;
+.table {
+  border-color: #ce0000;
   border-radius: 2px;
   margin: 0 0 20px 0;
 }
 
 
-.table-med > tbody > tr > td,
-.table-med > thead > tr > th {
+.table > tbody > tr > td,
+.table > thead > tr > th {
   padding: 5px 11px;
   margin: 0.2;
 }
 
-.table-med > thead > tr > th {
+.table > thead > tr > th {
   font-size: 1rem;
   border-top: none;
 }
 
-.table-med > tbody > tr > td{
+.table > tbody > tr > td{
   font-size: 1rem;
 }
 
@@ -1245,3 +1245,11 @@ THE 10 ITEMS aka PORTFOLIO2
   background-color: #ffe6e6;
 }
 
+.table-small thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-small tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
