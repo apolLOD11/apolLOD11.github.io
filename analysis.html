@@ -57,8 +57,26 @@
               <li><a href="#metadata-analysis">Metadata Analysis</a></li>
               <li><a href="#metadata-aligment">Metadata Alignment</a></li>
               <li><a href="#theoretical-model">Theoretical Model</a></li>
-              <li><a href="#conceptual-model">Conceptual Model</a></li>
-              <li><a href="#data-description">Data Description</a></li>
+              <li class="menu-has-children"><a href="#conceptual-model">Conceptual Model</a>
+                <ul>
+                  <li><a href="#who">WHO?</a></li>
+                  <li><a href="#where">WHERE?</a></li>
+                  <li><a href="#when">WHEN?</a></li>
+                  <li><a href="#what">WHAT?</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="#data-description">Data Description</a>
+                <ul>
+                  <li><a href="#person-1">Neil Armstrong</a></li>
+                  <li><a href="#person-2">Clifford Charlesworth</a></li>
+                  <li><a href="#place-1">Kennedy Space Center</a></li>
+                  <li><a href="#place-2">Mare Tranquillitatis</a></li>
+                  <li><a href="#date-1">16/07/1969</a></li>
+                  <li><a href="#date-2">20/07/1969</a></li>
+                  <li><a href="#concept-1">First Human Spaceflight</a></li>
+                  <li><a href="#concept-2">First Lunar Landing</a></li>
+                </ul>
+              </li>
               <li><a href="#rdf">RDF/XML</a></li>
               <li><a href="#data-connection">Data Connection</a></li>
             </ul>
@@ -645,15 +663,15 @@
       <div class="section-header">
       <h3 id="conceptual-model" class="section-title">Conceptual Model</h3>
       <p class="section-description">blablabla</p>
-      <h3>WHO?</h3>
+      <h3 id="who">WHO?</h3>
       <p>Description</p>
         <div class="table-responsive">       
               <table class="table-med table-hover">
                 <thead>
                   <tr>
-                    <th>QUESTION</th>
-                    <th>PREDICATE</th>
-                    <th>MODEL</th>
+                    <th class="table-col-60">QUESTION</th>
+                    <th class="table-col-17">PREDICATE</th>
+                    <th class="table-col-17">MODEL</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -693,7 +711,7 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>in which country was the person died?</b></td>
+                    <td><b>in which country did the person die?</b></td>
                     <td>person:countryOfDeath</td>
                     <td>Person Core Vocabulary</td>
                   </tr>
@@ -707,7 +725,7 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>where was the person died?</b></td>
+                    <td><b>where did the person die?</b></td>
                     <td>person:placeOfDeath</td>
                     <td>Person Core Vocabulary</td>
                   </tr>
@@ -721,7 +739,7 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>when was the person died?</b></td>
+                    <td><b>when did the person die?</b></td>
                     <td>core:dateOfDeath</td>
                     <td>Core Concepts Ontology</td>
                   </tr>
@@ -737,21 +755,21 @@
                   <tr>
                     <td><b>what is the qualification of the person?</b></td>
                     <td>frapo:hasQualification</td>
-                    <td>Funding, Research Administration and Projects Ontology</td>
+                    <td>FRAPO</td>
                   </tr>
                 </tbody>
                 <tbody>
                   <tr>
                     <td><b>what is the job of the person?</b></td>
                     <td>frapo:hasJobTitle</td>
-                    <td>Funding, Research Administration and Projects Ontology</td>
+                    <td>FRAPO</td>
                   </tr>
                 </tbody>
                 <tbody>
                   <tr>
                     <td><b>who is the the employer of the person?</b></td>
                     <td>frapo:isEmployedBy</td>
-                    <td>Funding, Research Administration and Projects Ontology</td>
+                    <td>FRAPO</td>
                   </tr>
                 </tbody><tbody>
                   <tr>
@@ -776,30 +794,30 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>when the person's career started?</b></td>
+                    <td><b>when did the person's career start?</b></td>
                     <td>dbo:startCareer</td>
                     <td>DBpedia Ontology</td>
                   </tr>
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>when the person's career finished?</b></td>
+                    <td><b>when did the person's career finish?</b></td>
                     <td>dbo:endCareer</td>
                     <td>DBpedia Ontology</td>
                   </tr>
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>with whom the person collaborated?</b></td>
+                    <td><b>with whom did the person collaborate?</b></td>
                     <td>frapo:collaboratesWith</td>
-                    <td>Funding, Research Administration and Projects Ontology</td>
+                    <td>FRAPO</td>
                   </tr>
                 </tbody>
                 <tbody>
                   <tr>
                     <td><b>which is the project the person is linked to?</b></td>
                     <td>frapo:hasProjectIdentifier</td>
-                    <td>Funding, Research Administration and Projects Ontology</td>
+                    <td>FRAPO</td>
                   </tr>
                 </tbody>
                 <tbody>
@@ -822,7 +840,7 @@
         <br>
         <br>
 
-        <h3>WHERE?</h3>
+        <h3 id="where">WHERE?</h3>
         <p>Description</p>
         <div class="table-responsive-sm">       
               <table class="table-med table-hover">
@@ -951,15 +969,15 @@
         <br>
         <br>
         
-        <h3>WHEN?</h3>
+        <h3 id="when">WHEN?</h3>
         <p>Description</p>
         <div class="table-responsive-sm">       
               <table class="table-med table-hover">
                 <thead>
                   <tr>
-                    <th>QUESTION</th>
-                    <th>PREDICATE</th>
-                    <th>MODEL</th>
+                    <th class="table-col-60">QUESTION</th>
+                    <th class="table-col-17">PREDICATE</th>
+                    <th class="table-col-17">MODEL</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -969,28 +987,224 @@
                     <td>EAC-CPF</td>
                   </tr>
                 </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the date format?</b></td>
+                    <td>eac-cpf: date standardDate</td>
+                    <td>EAC-CPF</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the person/group related?</b></td>
+                    <td>eac-cpf:cpfRelation</td>
+                    <td>EAC-CPF</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the date's relation to an event?</b></td>
+                    <td>crm:E53_place</td>
+                    <td>CIDOC-CRM</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the delay related to the earth time?</b></td>
+                    <td>service:delay</td>
+                    <td>The Service Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the period the date falls within?</b></td>
+                    <td>crm:P10_falls_within</td>
+                    <td>CIDOC-CRM</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which resource has the date as primary topic?</b></td>
+                    <td>foaf:isPrimaryTopicOf</td>
+                    <td>FOAF</td>
+                  </tr>
+                </tbody>                
               </table>
             </div>
 
         <br>
         <br>
         
-        <h3>WHAT?</h3>
+        <h3 id="what">WHAT?</h3>
         <p>Description</p>
         <div class="table-responsive-sm">       
               <table class="table-med table-hover">
                 <thead>
                   <tr>
-                    <th>QUESTION</th>
-                    <th>PREDICATE</th>
-                    <th>MODEL</th>
+                    <th class="table-col-60">QUESTION</th>
+                    <th class="table-col-17">PREDICATE</th>
+                    <th class="table-col-17">MODEL</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td><b>what type of entity?</b></td>
-                    <td>eac-cpf:entity</td>
+                    <td>rdfs:type</td>
+                    <td>RDF</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the subject?</b></td>
+                    <td>dcterms:subject</td>
+                    <td>DCMI Metadata Terms</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what are the other version of the name?</b></td>
+                    <td>eac-cpf:nameEntryParallel</td>
                     <td>EAC-CPF</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is a summary of the concept?</b></td>
+                    <td>dcterms:abstract</td>
+                    <td>DCMI Metadata Terms</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the target?</b></td>
+                    <td>prov:hadPlan</td>
+                    <td>PROV-O</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what was the event lenght?</b></td>
+                    <td>dcterms:SizeOrDuration</td>
+                    <td>DCMI Metadata Terms</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did it start?</b></td>
+                    <td>crm:P27_moved_from</td>
+                    <td>CIDOC-CRM</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did it reach the target?</b></td>
+                    <td>crm:P25_moved</td>
+                    <td>CIDOC-CRM</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did it end?</b></td>
+                    <td>crm:P26_moved_to</td>
+                    <td>CIDOC-CRM</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did it start? </b></td>
+                    <td>prov:startedAtTime</td>
+                    <td>PROV-O</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did it reach the target?</b></td>
+                    <td>prov:Plan</td>
+                    <td>PROV-O</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did it end? </b></td>
+                    <td>dbpedia-owl:endPoint</td>
+                    <td>DBPedia Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who is involved?</b></td>
+                    <td>prov:hadMember </td>
+                    <td>PROV-O</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the nationality of the person involved?</b></td>
+                    <td>dbpedia-owl:nationality</td>
+                    <td>DBPedia Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what means are used?</b></td>
+                    <td>dbpedia-owl:MeanOfTransportation</td>
+                    <td>DBPedia Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the distance covered by the mean?</b></td>
+                    <td>dbpedia-owl:distanceTraveled</td>
+                    <td>DBPedia Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name of the mean?</b></td>
+                    <td>gndo:MeansOfTransportWithIndividual_name</td>
+                    <td>GND Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the project/program the concept refers to?</b></td>
+                    <td>gndo:ProjectOrProgram</td>
+                    <td>GND Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who is financially involved?</b></td>
+                    <td>frapo:isFundedBy</td>
+                    <td>FRAPO</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what was its influence?</b></td>
+                    <td>prov:Influence</td>
+                    <td>PROV-O</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who was the previous?</b></td>
+                    <td>dbpedia-owl:previousEvent</td>
+                    <td>DBPedia Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who was the following?</b></td>
+                    <td>dbpedia-owl:nextEvent</td>
+                    <td>DBPedia Ontology</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which resource has the concept as primary topic?</b></td>
+                    <td>foaf:isPrimaryTopicOf</td>
+                    <td>FOAF</td>
                   </tr>
                 </tbody>
               </table>
@@ -1000,6 +1214,1105 @@
 </section>
 
 
+
+
+<!--DATA DESCRIPTION-->
+
+<section id="facts">
+    <div class="container">
+      <div class="section-header">
+        <h3 id="data-description" class="section-title">Data Description</h3>
+        <p class="section-description">blablablabla</p>
+        <h3 id="person-1">person/Neil Armstrong</h3>
+        <p>Description</p>
+        <div class="table-responsive">       
+              <table class="table-med table-hover">
+                <thead>
+                  <tr>
+                    <th class="table-col-60">QUESTION</th>
+                    <th class="table-col-17">PREDICATE</th>
+                    <th class="table-col-17">NEIL ARMSTRONG</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>what type of entity?</b></td>
+                    <td>eac-cpf:entity</td>
+                    <td>Person</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name?</b></td>
+                    <td>person:birthName</td>
+                    <td>Neil Alden</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the surname?</b></td>
+                    <td>foaf:surname</td>
+                    <td>Armstrong</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the gender?</b></td>
+                    <td>core/foaf:gender</td>
+                    <td>Male</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>in which country was the person born?</b></td>
+                    <td>person:countryOfBirth</td>
+                    <td>Ohio</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>in which country did the person die?</b></td>
+                    <td>person:countryOfDeath</td>
+                    <td>Ohio</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where was the person born?</b></td>
+                    <td>person:placeOfBirth</td>
+                    <td>Wapakoneta</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did the person die?</b></td>
+                    <td>person:placeOfDeath</td>
+                    <td>Cincinnati</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when was the person born?</b></td>
+                    <td>core:dateOfBirth</td>
+                    <td>05/08/1930</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did the person die?</b></td>
+                    <td>core:dateOfDeath</td>
+                    <td>25/08/2012</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the nationality?</b></td>
+                    <td>person:citizenship</td>
+                    <td>American</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the qualification of the person?</b></td>
+                    <td>frapo:hasQualification</td>
+                    <td>Areonautical engeneer</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the job of the person?</b></td>
+                    <td>frapo:hasJobTitle</td>
+                    <td>Astronaut</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who is the the employer of the person?</b></td>
+                    <td>frapo:isEmployedBy</td>
+                    <td>NASA</td>
+                  </tr>
+                </tbody><tbody>
+                  <tr>
+                    <td><b>what did the person do?</b></td>
+                    <td>core:knownFor</td>
+                    <td>First walk on the moon</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the relation event-person?</b></td>
+                    <td>dcterms:relation</td>
+                    <td>Agent</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what's the person's achievement?</b></td>
+                    <td>dbpedia-owl:achievement</td>
+                    <td>Lunar landing</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did the person's career start?</b></td>
+                    <td>dbo:startCareer</td>
+                    <td>06/1958</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did the person's career finish?</b></td>
+                    <td>dbo:endCareer</td>
+                    <td>1971</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>with whom did the person collaborate?</b></td>
+                    <td>frapo:collaboratesWith</td>
+                    <td>Michael Collins; Edwin E. Aldrin, Jr.</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which is the project the person is linked to?</b></td>
+                    <td>frapo:hasProjectIdentifier</td>
+                    <td>Apollo 11</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the biographical note of the person?</b></td>
+                    <td>eac-cpf:biogHist</td>
+                    <td>Neil Alden Armstrong (August 5, 1930 – August 25, 2012) was an American astronaut and aeronautical engineer who was the first person to walk on the Moon. He was also a naval aviator, test pilot, and university professor.</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which resource has the date as primary topic?</b></td>
+                    <td>foaf:isPrimaryTopicOf</td>
+                    <td>https://en.wikipedia.org/wiki/Neil_Armstrong</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <br>
+        <br>
+
+        <h3 id="person-2">person/Clifford Charlesworth</h3>
+        <p>Description</p>
+        <div class="table-responsive">       
+              <table class="table-med table-hover">
+                <thead>
+                  <tr>
+                    <th class="table-col-60">QUESTION</th>
+                    <th class="table-col-17">PREDICATE</th>
+                    <th class="table-col-17">CLIFFORD CHARLESWORTH</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>what type of entity?</b></td>
+                    <td>eac-cpf:entity</td>
+                    <td>Person</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name?</b></td>
+                    <td>person:birthName</td>
+                    <td>Clifford Eugene</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the surname?</b></td>
+                    <td>foaf:surname</td>
+                    <td>Charlesworth</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the gender?</b></td>
+                    <td>core/foaf:gender</td>
+                    <td>Male</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>in which country was the person born?</b></td>
+                    <td>person:countryOfBirth</td>
+                    <td>Minnesota</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>in which country did the person die?</b></td>
+                    <td>person:countryOfDeath</td>
+                    <td>Texas</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where was the person born?</b></td>
+                    <td>person:placeOfBirth</td>
+                    <td>Red Wing</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did the person die?</b></td>
+                    <td>person:placeOfDeath</td>
+                    <td>Friendswood</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when was the person born?</b></td>
+                    <td>core:dateOfBirth</td>
+                    <td>29/11/1931</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did the person die?</b></td>
+                    <td>core:dateOfDeath</td>
+                    <td>28/01/1991</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the nationality?</b></td>
+                    <td>person:citizenship</td>
+                    <td>American</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the qualification of the person?</b></td>
+                    <td>frapo:hasQualification</td>
+                    <td>Degree in physics</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the job of the person?</b></td>
+                    <td>frapo:hasJobTitle</td>
+                    <td>Flight director</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who is the the employer of the person?</b></td>
+                    <td>frapo:isEmployedBy</td>
+                    <td>NASA</td>
+                  </tr>
+                </tbody><tbody>
+                  <tr>
+                    <td><b>what did the person do?</b></td>
+                    <td>core:knownFor</td>
+                    <td>Directed the Apollo 11 mission</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the relation event-person?</b></td>
+                    <td>dcterms:relation</td>
+                    <td>Agent</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what's the person's achievement?</b></td>
+                    <td>dbpedia-owl:achievement</td>
+                    <td>Lunar landing</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did the person's career start?</b></td>
+                    <td>dbo:startCareer</td>
+                    <td>1962</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did the person's career finish?</b></td>
+                    <td>dbo:endCareer</td>
+                    <td>1988</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>with did whom the person collaborate?</b></td>
+                    <td>frapo:collaboratesWith</td>
+                    <td>Gerald D. Griffin; Gene Kranz; Glynn Lunney</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which is the project the person is linked to?</b></td>
+                    <td>frapo:hasProjectIdentifier</td>
+                    <td>Apollo 11</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the biographical note of the person?</b></td>
+                    <td>eac-cpf:biogHist</td>
+                    <td>Clifford Eugene Charlesworth (November 29, 1931 – January 28, 1991) was a NASA Flight Director during the Gemini and Apollo programs, including the Apollo 11 Moon landing mission.</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which resource has the date as primary topic?</b></td>
+                    <td>foaf:isPrimaryTopicOf</td>
+                    <td>https://en.wikipedia.org/wiki/Clifford_E._Charlesworth</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+
+        <br>
+        <br>
+
+        <h3 id="place-1">place/Kennedy Space Center</h3>
+        <p>Description</p>
+        <div class="table-responsive-sm">       
+              <table class="table-med table-hover">
+                <thead>
+                  <tr>
+                    <th>QUESTION</th>
+                    <th>PREDICATE</th>
+                    <th>KENNEDY SPACE CENTER</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>what type of entity?</b></td>
+                    <td>eac-cpf:entity</td>
+                    <td>Place</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name of the place?</b></td>
+                    <td>gn:name</td>
+                    <td>Kennedy Space Center</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the alternative-name for the place?</b></td>
+                    <td>gn:alternateName</td>
+                    <td>KSC; NASA Launch Operations Center</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name of the celestial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:CelestialBody</td>
+                    <td>Earth</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the country the place is located in? </b></td>
+                    <td>gn:countryName</td>
+                    <td>Florida</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the city the place is located in?</b></td>
+                    <td>dbpedia-owl:city</td>
+                    <td>Merritt Island</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the latitude?</b></td>
+                    <td>geo:lat</td>
+                    <td>28° 31′ 27″ N</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the longitude?</b></td>
+                    <td>geo:lng</td>
+                    <td>80° 39′ 3″ W</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the population of the place?</b></td>
+                    <td>gn:population</td>
+                    <td>34,743</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the surface area of the place?</b></td>
+                    <td>dbpedia-owl:surfaceArea</td>
+                    <td>122.2 square km</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the maximum temperature measured on the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:maximumTemperature</td>
+                    <td>56.7°C</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the minimum temperature measured on the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:minimumTemperature</td>
+                    <td>−89.2 °C</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the gravity of the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:surfaceGravity</td>
+                    <td>9,807 m/s²</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the orbital period of the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:orbitalPeriod</td>
+                    <td>365 days</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the role of the place?</b></td>
+                    <td>eac-cpf:placeRole</td>
+                    <td>Starting point</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the wikipedia article about the place?</b></td>
+                    <td>gn:wikipediaArticle</td>
+                    <td>https://en.wikipedia.org/wiki/Kennedy_Space_Center</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+        <br>
+        <br>
+
+        <h3 id="place-2">place/Mare Tranquillitatis</h3>
+        <p>Description</p>
+        <div class="table-responsive-sm">       
+              <table class="table-med table-hover">
+                <thead>
+                  <tr>
+                    <th>QUESTION</th>
+                    <th>PREDICATE</th>
+                    <th>MARE TRANQUILLITATIS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>what type of entity?</b></td>
+                    <td>eac-cpf:entity</td>
+                    <td>Place</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name of the place?</b></td>
+                    <td>gn:name</td>
+                    <td>Mare Tranquillitatis</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the alternative-name for the place?</b></td>
+                    <td>gn:alternateName</td>
+                    <td>Sea of Tranquillity; Sea of Tranquility </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name of the celestial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:CelestialBody</td>
+                    <td>Moon</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the country the place is located in? </b></td>
+                    <td>gn:countryName</td>
+                    <td>Tranquillitatis basin</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the city the place is located in?</b></td>
+                    <td>dbpedia-owl:city</td>
+                    <td>None</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the latitude?</b></td>
+                    <td>geo:lat</td>
+                    <td>8° 30′ 0″ N</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the longitude?</b></td>
+                    <td>geo:lng</td>
+                    <td>31° 24′ 0″ E</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the population of the place?</b></td>
+                    <td>gn:population</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the surface area of the place?</b></td>
+                    <td>dbpedia-owl:surfaceArea</td>
+                    <td>241078280 square km</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the maximum temperature measured on the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:maximumTemperature</td>
+                    <td>123°C</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the minimum temperature measured on the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:minimumTemperature</td>
+                    <td>−153 °C</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the gravity of the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:surfaceGravity</td>
+                    <td>1,62 m/s²</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the orbital period of the celastial body where the place is located on?</b></td>
+                    <td>dbpedia-owl:orbitalPeriod</td>
+                    <td>27.32 days</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the role of the place?</b></td>
+                    <td>eac-cpf:placeRole</td>
+                    <td>Target point</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the wikipedia article about the place?</b></td>
+                    <td>gn:wikipediaArticle</td>
+                    <td>https://en.wikipedia.org/wiki/Mare_Tranquillitatis</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+        <br>
+        <br>
+        <h3 id="date-1">date/16/07/1969</h3>
+        <p>Description</p>
+        <div class="table-responsive-sm">       
+              <table class="table-med table-hover">
+                <thead>
+                  <tr>
+                    <th class="table-col-60">QUESTION</th>
+                    <th class="table-col-17">PREDICATE</th>
+                    <th class="table-col-17">16/07/1969</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>what type of entity?</b></td>
+                    <td>eac-cpf:entity</td>
+                    <td>Date</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the date format?</b></td>
+                    <td>eac-cpf: date standardDate</td>
+                    <td>DD/MM/YYYY</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the date's relation to an event?</b></td>
+                    <td>crm:E53_place</td>
+                    <td>Starting date</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the delay related to the earth time?</b></td>
+                    <td>service:delay</td>
+                    <td>0 sec</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the period the date falls within?</b></td>
+                    <td>crm:P10_falls_within</td>
+                    <td>Contemporary age</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which resource has the date as primary topic?</b></td>
+                    <td>foaf:isPrimaryTopicOf</td>
+                    <td>https://en.wikipedia.org/wiki/July_1969#July_16,_1969_(Wednesday)</td>
+                  </tr>
+                </tbody>                
+              </table>
+            </div>
+
+        <br>
+        <br>
+
+        <h3 id="date-2">date/20/07/1969</h3>
+        <p>Description</p>
+        <div class="table-responsive-sm">       
+              <table class="table-med table-hover">
+                <thead>
+                  <tr>
+                    <th class="table-col-60">QUESTION</th>
+                    <th class="table-col-17">PREDICATE</th>
+                    <th class="table-col-17">20/07/1969</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>what type of entity?</b></td>
+                    <td>eac-cpf:entity</td>
+                    <td>Date</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the date format?</b></td>
+                    <td>eac-cpf: date standardDate</td>
+                    <td>DD/MM/YYYY</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the date's relation to an event?</b></td>
+                    <td>crm:E53_place</td>
+                    <td>Target date</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the delay related to the earth time?</b></td>
+                    <td>service:delay</td>
+                    <td>2 sec</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the period the date falls within?</b></td>
+                    <td>crm:P10_falls_within</td>
+                    <td>Contemporary age</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which resource has the date as primary topic?</b></td>
+                    <td>foaf:isPrimaryTopicOf</td>
+                    <td>https://en.wikipedia.org/wiki/July_1969#July_20,_1969_(Sunday)</td>
+                  </tr>
+                </tbody>                
+              </table>
+            </div>
+
+        <br>
+        <br>
+
+        <h3 id="concept-1">concept/First Human Spaceflight</h3>
+            <p>Description</p>
+            <div class="table-responsive-sm">       
+                  <table class="table-med table-hover">
+                    <thead>
+                      <tr>
+                        <th class="table-col-60">QUESTION</th>
+                        <th class="table-col-17">PREDICATE</th>
+                        <th class="table-col-17">FIRST HUMAN SPACEFLIGHT</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><b>what type of entity?</b></td>
+                        <td>rdfs:type</td>
+                        <td>Concept</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what is the subject?</b></td>
+                        <td>dcterms:subject</td>
+                        <td>Human spaceflight</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what are the other version of the name?</b></td>
+                        <td>eac-cpf:nameEntryParallel</td>
+                        <td>Crewed spaceflight; Manned spaceflight; Vostok program</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what is a summary of the concept?</b></td>
+                        <td>dcterms:abstract</td>
+                        <td>The first human spaceflight was launched by the Soviet Union on 12 April 1961 as a part of the Vostok program, with cosmonaut Yuri Gagarin aboard. Humans have been continuously present in space for 18 years and 181 days on the International Space Station. All early human spaceflight was crewed, where at least some of the passengers acted to carry out tasks of piloting or operating the spacecraft. After 2015, several human-capable spacecraft are being explicitly designed with the ability to operate autonomously.</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what is the target?</b></td>
+                        <td>prov:hadPlan</td>
+                        <td>Lead men in the space</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what was the event lenght?</b></td>
+                        <td>dcterms:SizeOrDuration</td>
+                        <td>1 hour, 48 minutes</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>where did it start?</b></td>
+                        <td>crm:P27_moved_from</td>
+                        <td>Baikonur Cosmodrome</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>where did it reach the target?</b></td>
+                        <td>crm:P25_moved</td>
+                        <td>Outer space</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>where did it end?</b></td>
+                        <td>crm:P26_moved_to</td>
+                        <td>Saratov region</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>when did it start? </b></td>
+                        <td>prov:startedAtTime</td>
+                        <td>12/4/1961</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>when did it reach the target?</b></td>
+                        <td>prov:Plan</td>
+                        <td>12/4/1961</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>when did it end? </b></td>
+                        <td>dbpedia-owl:endPoint</td>
+                        <td>12/4/1961</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>who is involved?</b></td>
+                        <td>prov:hadMember </td>
+                        <td>Soviet Union</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what is the nationality of the person involved?</b></td>
+                        <td>dbpedia-owl:nationality</td>
+                        <td>Soviet</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what means are used?</b></td>
+                        <td>dbpedia-owl:MeanOfTransportation</td>
+                        <td>Spaceship</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what is the distance covered by the mean?</b></td>
+                        <td>dbpedia-owl:distanceTraveled</td>
+                        <td>2,560,000 km</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what is the name of the mean?</b></td>
+                        <td>gndo:MeansOfTransportWithIndividual_name</td>
+                        <td>Vostok-3KA No.3</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what is the project/program the concept refers to?</b></td>
+                        <td>gndo:ProjectOrProgram</td>
+                        <td>Vostok 1</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>who is financially involved?</b></td>
+                        <td>frapo:isFundedBy</td>
+                        <td>Soviet Union</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>what was its influence?</b></td>
+                        <td>prov:Influence</td>
+                        <td>Technological improvement; demonstrating the superiority of the socialist system over capitalism</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>who was the previous?</b></td>
+                        <td>dbpedia-owl:previousEvent</td>
+                        <td>None</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>who was the following?</b></td>
+                        <td>dbpedia-owl:nextEvent</td>
+                        <td>05/05/1961</td>
+                      </tr>
+                    </tbody>
+                    <tbody>
+                      <tr>
+                        <td><b>which resource has the concept as primary topic?</b></td>
+                        <td>foaf:isPrimaryTopicOf</td>
+                        <td>https://en.wikipedia.org/wiki/Vostok_1</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <br>
+                <br>
+
+            <h3 id="concept-2">concept/First Lunar Landing</h3>
+                <p>Description</p>
+                <div class="table-responsive-sm">       
+                      <table class="table-med table-hover">
+                        <thead>
+                          <tr>
+                            <th class="table-col-60">QUESTION</th>
+                            <th class="table-col-17">PREDICATE</th>
+                            <th class="table-col-17">FIRST LUNAR LANDING</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>what type of entity?</b></td>
+                    <td>rdfs:type</td>
+                    <td>Concept</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the subject?</b></td>
+                    <td>dcterms:subject</td>
+                    <td>Lunar Landing</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what are the other version of the name?</b></td>
+                    <td>eac-cpf:nameEntryParallel</td>
+                    <td>First moon landing; Luna 2; Moon 2</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is a summary of the concept?</b></td>
+                    <td>dcterms:abstract</td>
+                    <td>Luna 2 (E-1A series) or Lunik 2 (Russian: Луна 2) was the sixth of the Soviet Union's Luna programme spacecraft launched to the Moon. It was the first spacecraft to reach the surface of the Moon, and the first human-made object to make contact with another celestial body.</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the target?</b></td>
+                    <td>prov:hadPlan</td>
+                    <td>Landing on the moon surface</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what was the event lenght?</b></td>
+                    <td>dcterms:SizeOrDuration</td>
+                    <td>1 day, 14 hours, 22 minutes and 42 seconds</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did it start?</b></td>
+                    <td>crm:P27_moved_from</td>
+                    <td>Baikonur Cosmodrome </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did it reach the target?</b></td>
+                    <td>crm:P25_moved</td>
+                    <td>Mare Imbrium </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>where did it end?</b></td>
+                    <td>crm:P26_moved_to</td>
+                    <td>Mare Imbrium </td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did it start? </b></td>
+                    <td>prov:startedAtTime</td>
+                    <td>12/09/1959</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did it reach the target?</b></td>
+                    <td>prov:Plan</td>
+                    <td>13/09/1959</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>when did it end?</b></td>
+                    <td>dbpedia-owl:endPoint</td>
+                    <td>13/09/1959</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who is involved?</b></td>
+                    <td>prov:hadMember </td>
+                    <td>None</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the nationality of the person involved?</b></td>
+                    <td>dbpedia-owl:nationality</td>
+                    <td>None</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what means are used?</b></td>
+                    <td>dbpedia-owl:MeanOfTransportation</td>
+                    <td>Spacecraft</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the distance covered by the mean?</b></td>
+                    <td>dbpedia-owl:distanceTraveled</td>
+                    <td>400000 km ca</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the name of the mean?</b></td>
+                    <td>gndo:MeansOfTransportWithIndividual_name</td>
+                    <td>Luna 8K72</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what is the project/program the concept refers to?</b></td>
+                    <td>gndo:ProjectOrProgram</td>
+                    <td>Luna Programme</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who is financially involved?</b></td>
+                    <td>frapo:isFundedBy</td>
+                    <td>Soviet Union</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>what was its influence?</b></td>
+                    <td>prov:Influence</td>
+                    <td>Lunar wind; Van Allen radiation belt</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who was the previous?</b></td>
+                    <td>dbpedia-owl:previousEvent</td>
+                    <td>None</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>who was the following?</b></td>
+                    <td>dbpedia-owl:nextEvent</td>
+                    <td>Ranger 4</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td><b>which resource has the concept as primary topic?</b></td>
+                    <td>foaf:isPrimaryTopicOf</td>
+                    <td>https://en.wikipedia.org/wiki/Luna_2</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <br>
+            <br>
+
+            
+            
+      </div>
+    </div>
+</section>
 
   <!-- FOOTER-->
   <footer id="footer">
