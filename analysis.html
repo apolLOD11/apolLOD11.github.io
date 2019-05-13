@@ -2306,12 +2306,66 @@
             </div>
 
             <br>
-            <br>
-
-            
-            
+            <br>     
       </div>
     </div>
+</section>
+
+<!-- RDF -->
+<section id="about">
+  <div class="container">
+  <div class="section-header">
+        <h3 id="data-description" class="section-title">RDF</h3>
+        <p class="section-description">blablablabla</p>
+        <h3 id="person-1">RDF/XML - Neil Armstrong</h3>
+  <pre class="pre-scrollable">
+    <code class="xml hljs">
+      <span class="hljs-meta">&#60;?xml version="1.0" encoding="UTF-8"?&#62;</span>
+
+      <span class="hljs-tag">&#60;<span class="hljs-name">rdf:RDF</span>
+          <span class="hljs-attr">xmlns:rdf</span>=<span class="hljs-string">"http://www.w3.org/1999/02/22-rdf-syntax-ns#"</span>
+          <span class="hljs-attr">xmlns:eac-cpf</span>=<span class="hljs-string">"http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/"</span>
+          <span class="hljs-attr">xmlns:person</span>=<span class="hljs-string">"http://www.w3.org/ns/person#"</span>
+          <span class="hljs-attr">xmlns:foaf</span>=<span class="hljs-string">"http://xmlns.com/foaf/spec//index.rdf"</span>
+          <span class="hljs-attr">xmlns:core</span>=<span class="hljs-string">"http://www.bbc.co.uk/ontologies/coreconcepts/"</span>
+          <span class="hljs-attr">xmlns:frapo</span>=<span class="hljs-string">"http://purl.org/cerif/frapo.xml"</span>
+          <span class="hljs-attr">xmlns:dcterms</span>=<span class="hljs-string">"http://purl.org/dc/terms/"</span>
+          <span class="hljs-attr">xmlns:dbo</span>=<span class="hljs-string">"http://dbpedia.org/resource/"</span>&#62;</span>
+        
+        <span class="hljs-tag">&#60;<span class="hljs-name">rdf:description</span><span class="hljs-attr"> rdf:about</span>=<span class="hljs-string">"http://semanticweb.org/apollod11/NeilArmstrong"</span>&#62;
+        </span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">eac-cpf:type </span><span class="hljs-attr">rdf:resource</span>=<span class="hljs-string">"http://xmlns.com/foaf/spec/#term_Person/"</span>/&#62;
+          </span><span class="hljs-tag">&#60;<span class="hljs-name">person:birthName</span>&#62;Neil Alden&#60;<span class="hljs-name">person:birthName</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">foaf:surname</span>&#62;</span>Armstrong<span class="hljs-tag">&#60;/<span class="hljs-name">foaf:surname</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">foaf:name</span></span> <span class="hljs-attr">rdf:resource=</span><span class="hljs-string">"http://dbpedia.org/page/Neil_Armstrong"</span>/&#62;
+          <span class="hljs-tag">&#60;<span class="hljs-name">foaf:gender</span>&#62;</span>Male<span class="hljs-tag">&#60;/<span class="hljs-name">foaf:gender</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">person:countryOfBirth</span>&#62;</span>Ohio<span class="hljs-tag">&#60;/<span class="hljs-name">person:countryOfBirth&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">person:countryOfDeath</span>&#62;</span>Ohio<span class="hljs-tag">&#60;/<span class="hljs-name">person:countryOfDeath</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">person:placeOfBirth</span>&#62;</span>Wapakoneta<span class="hljs-tag">&#60;/<span class="hljs-name">person:placeOfBirth</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">person:placeOfDeath</span>&#62;</span>Cincinnati<span class="hljs-tag">&#60;/<span class="hljs-name">person:placeOfDeath</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">core:dateOfBirth</span>&#62;</span>05/08/1930<span class="hljs-tag">&#60;/<span class="hljs-name">core:dateOfBirth</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">core:dateOfDeath</span>&#62;</span>25/08/2012<span class="hljs-tag">&#60;/<span class="hljs-name">core:dateOfDeath</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">person:citizenship</span>&#62;</span>American<span class="hljs-tag">&#60;/<span class="hljs-name">person:citizenship</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">frapo:hasQualification</span>&#62;</span>Areonautical Engeneer<span class="hljs-tag">&#60;/<span class="hljs-name">frapo:hasQualification</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">frapo:hasJobTitle</span>&#62;</span>Astronaut<span class="hljs-tag">&#60;/<span class="hljs-name">frapo:hasJobTitle</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">frapo:isEmployedBy</span>&#62;</span>NASA<span class="hljs-tag">&#60;/<span class="hljs-name">frapo:isEmployedBy</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">core:knownFor</span>&#62;</span>First walk on the Moon<span class="hljs-tag">&#60;/<span class="hljs-name">core:knownFor</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dcterms:relation</span>&#62;</span>Agent<span class="hljs-tag">&#60;/<span class="hljs-name">dcterms:relation</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia:achivement</span>&#62;</span>First Human Lunar Landing<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia:achivement</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbo:startCareer</span>&#62;</span>1958<span class="hljs-tag">&#60;/<span class="hljs-name">dbo:startCareer</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbo:endCareer</span>&#62;</span>1971<span class="hljs-tag">&#60;/<span class="hljs-name">dbo:endCareer</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">frapo:collaboratesWith</span>&#62;</span>Michael Collins, Edwin E. Aldrin<span class="hljs-tag">&#60;/<span class="hljs-name">frapo:collaboratesWith</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">frapo:hasProjectIdentifier</span>&#62;</span>Apollo 11<span class="hljs-tag">&#60;/<span class="hljs-name">frapo:hasProjectIdentifier</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">eac-cpf:biogHist</span>&#62;</span>Neil Alden Armstrong (August 5, 1930 – August 25, 2012) was an American astronaut and
+          aeronautical engineer who was the first person to walk on the Moon. 
+          He was also a naval aviator, test pilot, and University professor.<span class="hljs-tag">&#60;/<span class="hljs-name">eac-cpf:biogHist</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">foaf:isPrimaryTopicOf</span>&#62;https://en.wikipedia.org/wiki/Neil_Armstrong<span class="hljs-tag">&#60;/<span class="hljs-name">foaf:isPrimaryTopicOf</span>&#62;</span>
+      
+        <span class="hljs-tag">&#60;/<span class="hljs-name">rdf:description</span>&#62;</span>
+      <span class="hljs-tag">&#60;/<span class="hljs-name">rdf:RDF</span>&#62;</span>
+    </code>
+  </pre>
+  </div>
 </section>
 
   <!-- FOOTER-->
