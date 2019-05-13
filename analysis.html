@@ -2366,6 +2366,7 @@
     </code>
   </pre>
 
+<hr>
 
   <h3 id="person-1">RDF/XML - Mare Tranquillitatis</h3>
   <pre class="pre-scrollable">
@@ -2401,7 +2402,58 @@
           <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia:orbitalPeriod</span>&#62;</span>27,32 days<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia-owl:orbitalPeriod</span>&#62;</span>
           <span class="hljs-tag">&#60;<span class="hljs-name">eac-cpf:placeRole</span>&#62;</span>Target point<span class="hljs-tag">&#60;/<span class="hljs-name">eac-cpf:placeRole</span>&#62;</span>
           <span class="hljs-tag">&#60;<span class="hljs-name">gn:wikipediaArticle</span>&#62;</span>https://en.wikipedia.org/wiki/Mare_Tranquillitatis<span class="hljs-tag">&#60;/<span class="hljs-name">gn:wikipediaArticle</span>&#62;</span>
-         
+    
+      
+        <span class="hljs-tag">&#60;/<span class="hljs-name">rdf:description</span>&#62;</span>
+      <span class="hljs-tag">&#60;/<span class="hljs-name">rdf:RDF</span>&#62;</span>
+    </code>
+  </pre>
+
+<hr>
+
+  <h3 id="person-1">RDF/XML - First Human Spaceflight</h3>
+  <pre class="pre-scrollable">
+    <code class="xml hljs">
+      <span class="hljs-meta">&#60;?xml version="1.0" encoding="UTF-8"?&#62;</span>
+
+      <span class="hljs-tag">&#60;<span class="hljs-name">rdf:RDF</span>
+          <span class="hljs-attr">xmlns:rdf</span>=<span class="hljs-string">"http://www.w3.org/1999/02/22-rdf-syntax-ns#"</span>
+          <span class="hljs-attr">xmlns:eac-cpf</span>=<span class="hljs-string">"http://archivi.ibc.regione.emilia-romagna.it/ontology/eac-cpf/"</span>
+          <span class="hljs-attr">xmlns:person</span>=<span class="hljs-string">"http://www.w3.org/ns/person#"</span>
+          <span class="hljs-attr">xmlns:foaf</span>=<span class="hljs-string">"http://xmlns.com/foaf/spec//index.rdf"</span>
+          <span class="hljs-attr">xmlns:core</span>=<span class="hljs-string">"http://www.bbc.co.uk/ontologies/coreconcepts/"</span>
+          <span class="hljs-attr">xmlns:frapo</span>=<span class="hljs-string">"http://purl.org/cerif/frapo.xml"</span>
+          <span class="hljs-attr">xmlns:dcterms</span>=<span class="hljs-string">"http://purl.org/dc/terms/"</span>
+          <span class="hljs-attr">xmlns:dbo</span>=<span class="hljs-string">"http://dbpedia.org/resource/"</span>&#62;</span>
+        
+        <span class="hljs-tag">&#60;<span class="hljs-name">rdf:description</span><span class="hljs-attr"> rdf:about</span>=<span class="hljs-string">"http://semanticweb.org/apollod11/MareTranquillitatis"</span>&#62;
+        </span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">rdfs:type</span>&#62;</span>Concept<span class="hljs-tag">&#60;<span class="hljs-name">rdfs:type</span>/&#62;</span>
+          </span><span class="hljs-tag">&#60;<span class="hljs-name">dcterms:subject</span>&#62;Human Spaceflight&#60;<span class="hljs-name">dcterms:subject</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">eac-cpf:nameEntryParallel</span>&#62;</span>Crewed spaceflight; Manned spaceflight; Vostok program<span class="hljs-tag">&#60;/<span class="hljs-name">eac-cpf:nameEntryParallel</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia:CelestialBody</span></span>Moon<span class="hljs-tag">&#60;/<span class="hljs-name">dcterms:abstract</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">gn:countryName</span>&#62;</span>The first human spaceflight was launched by the Soviet Union on 12 April 1961 as a part of the Vostok program, with cosmonaut Yuri Gagarin aboard. Humans have been continuously present in space for 18 years and 181 days on the International Space Station. All early human spaceflight was crewed, where at least some of the passengers acted to carry out tasks of piloting or operating the spacecraft. After 2015, several human-capable spacecraft are being explicitly designed with the ability to operate autonomously.<span class="hljs-tag">&#60;/<span class="hljs-name">dcterms:abstract</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">prov:hadPlan</span>&#62;</span>NLead men in the space<span class="hljs-tag">&#60;/<span class="hljs-name">prov:hadPlan</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dcterms:SizeOrDuration</span>&#62;</span>1 hour, 48 minutes<span class="hljs-tag">&#60;/<span class="hljs-name">dcterms:SizeOrDuration</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">  crm:P27_moved_from</span>&#62;</span>Baikonur Cosmodrome<span class="hljs-tag">&#60;/<span class="hljs-name"> crm:P27_moved_from</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">crm:P25_moved</span>&#62;</span>Outer space<span class="hljs-tag">&#60;/<span class="hljs-name">crm:P25_moved</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">crm:P26_moved_to</span>&#62;</span>Saratov region<span class="hljs-tag">&#60;/<span class="hljs-name">crm:P26_moved_to</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">  prov:startedAtTime</span>&#62;</span>12/04/1961<span class="hljs-tag">&#60;/<span class="hljs-name">prov:startedAtTime</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">prov:Plan</span>&#62;</span>12/4/1961<span class="hljs-tag">&#60;/<span class="hljs-name">prov:Plan</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia:endPoint</span>&#62;</span>12/41961<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia:endPoint</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">prov:hadMember</span>&#62;</span>Soviet Union<span class="hljs-tag">&#60;/<span class="hljs-name">prov:hadMember</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia:nationality</span>&#62;</span>Soviet<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia:nationality</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">  dbpedia:MeanOfTransportation</span>&#62;</span>Vostok-3KA No.3 spacecraft<span class="hljs-tag">&#60;/<span class="hljs-name"> dbpedia:MeanOfTransportation</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia:distanceTraveled</span>&#62;</span>2.560.000 km<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia:distanceTraveled</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">gndo:MeansOfTransportWithIndividual_name</span>&#62;</span>Vostok-3AKA No.3<span class="hljs-tag">&#60;/<span class="hljs-name">gndo:MeansOfTransportWithIndividual_name</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">gndo:ProjectOrProgram</span>&#62;</span>Vostok 1<span class="hljs-tag">&#60;/<span class="hljs-name">gndo:ProjectOrProgram</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">frapo:isFundedBy</span>&#62;</span>Soviet Union<span class="hljs-tag">&#60;/<span class="hljs-name">frapo:isFundedBy</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">prov:Influence</span>&#62;</span>Technological improvement; demonstrating the superiority of the socialist system over capitalism<span class="hljs-tag">&#60;/<span class="hljs-name">prov:Influence</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia-owl:previousEvent</span>&#62;</span>None<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia-owl:previousEvent</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia-owl:nextEvent</span>&#62;</span>05/05/1961<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia-owl:nextEvent</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">foaf:isPrimaryTopicOf</span>&#62;</span>https://en.wikipedia.org/wiki/Vostok_1<span class="hljs-tag">&#60;/<span class="hljs-name">foaf:isPrimaryTopicOf</span>&#62;</span>
+          
+    
       
         <span class="hljs-tag">&#60;/<span class="hljs-name">rdf:description</span>&#62;</span>
       <span class="hljs-tag">&#60;/<span class="hljs-name">rdf:RDF</span>&#62;</span>
