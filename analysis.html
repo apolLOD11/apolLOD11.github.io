@@ -2514,8 +2514,8 @@
           <span class="hljs-attr">xmlns:core</span>=<span class="hljs-string">"http://www.bbc.co.uk/ontologies/coreconcepts/"</span>
           <span class="hljs-attr">xmlns:frapo</span>=<span class="hljs-string">"http://purl.org/cerif/frapo.xml"</span>
           <span class="hljs-attr">xmlns:dcterms</span>=<span class="hljs-string">"http://purl.org/dc/terms/"</span>
-          <span class="hljs-attr">xmlns:dbo</span>=<span class="hljs-string">"http://dbpedia.org/resource/"</span>&#62;</span>
-          <span class="hljs-attr">xmlns:owl</span>=<span class="hljs-string">"hhttp://www.w3.org/2002/07/owl#"</span>
+          <span class="hljs-attr">xmlns:dbo</span>=<span class="hljs-string">"http://dbpedia.org/resource/"</span>
+          <span class="hljs-attr">xmlns:owl</span>=<span class="hljs-string">"hhttp://www.w3.org/2002/07/owl#"</span>&#62;</span>
         
         <span class="hljs-tag">&#60;<span class="hljs-name">rdf:description</span><span class="hljs-attr"> rdf:about</span>=<span class="hljs-string">"http://semanticweb.org/apollod11/NeilArmstrong"</span>&#62;
         </span>
@@ -2676,11 +2676,15 @@
       Thus, people, places and concepts were matched to their respective authorities, employing various ontologies and vocabulary such as <b>FOAF</b>, <b>SKOS</b> and <b>RDFS</b>. 
       In general, we tried to connect our data by using different kind of properties and standards, but in particular we maintained two specific attributes - <b>owl:sameAs</b> and <b>foaf:isPrimaryTopicOf</b> -  for each entity, in order to create a solid connection between our URI's and the external linked open databases.
       <hr></p>
-      <h5><b>NEIL ARMSTRONG</b></h5>
-      <p><b>URI: </b><a href="#">http://semanticweb.og/apollod11/NeilArmstrong</a></p>
-      <p></p>
-
       </div>
+       <h5><b>NEIL ARMSTRONG</b></h5>
+      <ul>
+        <li><p>URI: <span class="colored">http://semanticweb.og/apollod11/NeilArmstrong</span></p></li>
+        <li><p><span class="colored">foaf:isPrimaryTopicOf rdf:resource="https://en.wikipedia.org/wiki/Neil_Armstrong"</span><br>
+        The <b>FOAF</b>property indicates that our URI is connected with the authoriy file provided by <b>VIAF</b>.</p></li>
+        <li>Milk</li>
+      </ul>  
+       </p>
     </div>
   </section>
 
