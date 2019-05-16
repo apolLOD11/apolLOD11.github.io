@@ -2495,17 +2495,8 @@
         <p class="section-description">blablablabla</p>
   </div>
   <h3 id="person-1">person/Neil Armstrong</h3>
-  <div class="row">
-    <div class="col-md-4">
-      <p><b>URI</b>: http://semanticweb.org/apollod11/NeilArmstrong</p>
-    </div>
-    <div class="col-md-4">
-      <p><b>GRAPH</b>: get the visualization <a href="arm_graph.png"><u>here</u></a></p>
-    </div>
-    <div class="col-md-4">
-      <p><b>RDF/XML</b>: the serialization in RDF/XML</p>
-    </div>
-  </div>
+  <h6><b>URI: </b>http://semanticweb.org/apollod11/NeilArmstrong</h6>
+  <h6><b>GRAPH</b>: get the visualization <a href="arm_graph.png"><u>here</u></a></h6>
 
       <!--  <h3 id="person-1">person/Neil Armstrong</h3>
         <p><b>URI</b>: http://semanticweb.org/apollod11/NeilArmstrong</p>
@@ -2566,6 +2557,8 @@
 <hr>
 
   <h3 id="person-1">RDF/XML - Mare Tranquillitatis</h3>
+  <h6><b>URI: </b>http://semanticweb.org/apollod11/MareTranquillitatis</h6>
+  <h6><b>GRAPH</b>: get the visualization <a href="arm_graph.png"><u>here</u></a></h6>
   <pre class="pre-scrollable">
     <code class="xml hljs">
       <span class="hljs-meta">&#60;?xml version="1.0" encoding="UTF-8"?&#62;</span>
@@ -2610,6 +2603,8 @@
 <hr>
 
   <h3 id="person-1">RDF/XML - First Human Spaceflight</h3>
+  <h6><b>URI: </b>http://semanticweb.org/apollod11/FirstHumanSpaceflight</h6>
+  <h6><b>GRAPH</b>: get the visualization <a href="arm_graph.png"><u>here</u></a></h6>
   <pre class="pre-scrollable">
     <code class="xml hljs">
       <span class="hljs-meta">&#60;?xml version="1.0" encoding="UTF-8"?&#62;</span>
@@ -2657,7 +2652,7 @@
           <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia-owl:previousEvent</span>&#62;</span>None<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia-owl:previousEvent</span>&#62;</span>
           <span class="hljs-tag">&#60;<span class="hljs-name">dbpedia-owl:nextEvent</span>&#62;</span>05/05/1961<span class="hljs-tag">&#60;/<span class="hljs-name">dbpedia-owl:nextEvent</span>&#62;</span>
           <span class="hljs-tag">&#60;<span class="hljs-name">foaf:isPrimaryTopicOf</span></span><span class="hljs-attr"> rdf:resource</span>=<span class="hljs-string">"https://en.wikipedia.org/wiki/Vostok_1"</span>/&#62;</span>
-          <span class="hljs-tag">&#60;<span class="hljs-name">rdfs:seeAlso</span></span><span class="hljs-attr"> rdf:resource</span>=<span class="hljs-string">"http://dbpedia.org/page/Vostok_1"</span>/&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">rdfs:seeAlso</span></span><span class="hljs-attr"> sameAs:resource</span>=<span class="hljs-string">"http://dbpedia.org/page/Vostok_1"</span>/&#62;</span>
           <span class="hljs-tag">&#60;<span class="hljs-name">rdfs:seeAlso</span></span><span class="hljs-attr"> rdf:resource</span>=<span class="hljs-string">"http://vocab.getty.edu/ulan/500342574"</span>/&#62;</span>
           
     
@@ -2671,12 +2666,16 @@
 
 <!-- DATA CONNECTION -->
  
-<section id="about">
+<section id="facts">
     <div class="container">
       <div class="section-header">
       <h3 id="data-connection" class="section-title">DATA CONNECTION</h3>
-      <p class="section-description">Once we have structured our data in a formal way, we have made our efforts to interconnect them with each other and between the controlled authorities present on the Web.
-        <blockquote>The Semantic Web isn’t just about putting data on the web. It is about making links, so that a person or machine can explore the web of data.  With linked data, when you have some of it, you can find other, related, data. (Tim Berners-Lee, 2016)</blockquote></p>
+      <p class="section-description">
+        <div class="quotation"><blockquote>The Semantic Web isn’t just about putting data on the web. It is about making links, so that a person or machine can explore the web of data.  With linked data, when you have some of it, you can find other, related, data. (Tim Berners-Lee, 2016)</blockquote></div>
+        Once we have structured our data in a formal way, we have made our efforts to interconnect them with each other and between the controlled authorities present on the Web.
+      Thus, people, places and concepts were matched to their respective authorities, employing various ontologies and vocabulary such as <b>FOAF</b>, <b>SKOS</b> and <b>RDFS</b>. 
+      In general, we tried to connect our data by using different kind of properties and standards, but in particular we tried to maintain two specific attributes - <b>owl:sameAs</b> and <b>foaf:isPrimaryTopicOf</b> -  for each entity, in order to create a solid connection between our URI's and the external linked open databases.
+      </p>
       </div>
     </div>
   </section>
