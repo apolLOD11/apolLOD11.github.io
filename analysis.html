@@ -52,40 +52,22 @@
           <li><a href="index.html#services">About ApolLOD 11</a></li>
           <li><a href="index.html#team">Team</a></li>
           <li><a href="index.html#contact">Contacts</a></li>
-          <li class="menu-active"><a href="analysis.html">The Project</a>
-            <ul>
-              <li><a href="#portfolio2">The 10 Items</a></li>
-              <li><a href="#er-model">E/R Model</a></li>
-              <li><a href="#metadata-analysis">Metadata Analysis</a></li>
-              <li><a href="#metadata-aligment">Metadata Alignment</a></li>
-              <li><a href="#theoretical-model">Theoretical Model</a></li>
-              <li class="menu-has-children"><a href="#conceptual-model">Conceptual Model</a>
-                <ul>
-                  <li><a href="#who">WHO?</a></li>
-                  <li><a href="#where">WHERE?</a></li>
-                  <li><a href="#when">WHEN?</a></li>
-                  <li><a href="#what">WHAT?</a></li>
-                </ul>
-              </li>
-              <li class="menu-has-children"><a href="#data-description">Data Description</a>
-                <ul>
-                  <li><a href="#person-1">Neil Armstrong</a></li>
-                  <li><a href="#person-2">Clifford Charlesworth</a></li>
-                  <li><a href="#place-1">Kennedy Space Center</a></li>
-                  <li><a href="#place-2">Mare Tranquillitatis</a></li>
-                  <li><a href="#date-1">16/07/1969</a></li>
-                  <li><a href="#date-2">20/07/1969</a></li>
-                  <li><a href="#concept-1">First Human Spaceflight</a></li>
-                  <li><a href="#concept-2">First Lunar Landing</a></li>
-                </ul>
-              </li>
-              <li><a href="#rdf">RDF/XML</a></li>
-              <li><a href="#data-connection">Data Connection</a></li>
+          <li class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a id="speciala" href="#">Project</a>
+          </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#portfolio2">The 10 Items</a></li>
+              <li><a class="dropdown-item" href="#er-model">E/R Model</a></li>
+              <li><a class="dropdown-item" href="#metadata-analysis">Metadata Analysis</a></li>
+              <li><a class="dropdown-item" href="#metadata-aligment">Metadata Alignment</a></li>
+              <li><a class="dropdown-item" href="#theoretical-model">Theoretical Model</a></li>
+              <li><a class="dropdown-item" href="#conceptual-model">Conceptual Model</a>
+              <li><a class="dropdown-item" href="#data-description">Data Description</a>
+              <li><a class="dropdown-item" href="#rdf/xml">RDF/XML</a></li>
+              <li><a class="dropdown-item" href="#data-connection">Data Connection</a></li>
             </ul>
           </li>
-        </ul>
       </nav><!-- #nav-menu-container -->
-    </div>
   </header><!-- #header -->
 
  <!--==========================
@@ -2553,10 +2535,10 @@
 <!-- RDF -->
 <section id="about">
   <div class="container">
-  <div class="section-header">
-        <h3 id="data-description" class="section-title">RDF/XML</h3>
-        <p class="section-description">blablablabla</p>
-  </div>
+    <div class="section-header">
+          <h3 id="rdf/xml" class="section-title">RDF/XML</h3>
+          <p class="section-description">blablablabla</p>
+    </div>
   <h3 id="person-1">person/Neil Armstrong</h3>
   <h6><b>URI: </b>http://semanticweb.org/apollod11/NeilArmstrong</h6>
   <h6><b>GRAPH</b>: get the visualization <a href="arm_graph.png"><u>here</u></a></h6>
@@ -2636,8 +2618,8 @@
           <span class="hljs-attr">xmlns:dbpedia-owl</span>=<span class="hljs-string">"http://dbpedia.org/ontology/"</span>
           <span class="hljs-attr">xmlns:owl</span>=<span class="hljs-string">"hhttp://www.w3.org/2002/07/owl#"</span>&#62;</span>
           
-        <span class="hljs-tag">&#60;<span class="hljs-name">rdf:description</span></span><span class="hljs-attr"> rdf:about</span>=<span class="hljs-string">"http://semanticweb.org/apollod11/MareTranquillitatis"</span>&#62;</span>
-          <span class="hljs-tag">&#60;<span class="hljs-name">eac-cpf:entity</span>&#62;</span>Place<span class="hljs-tag">&#60;/<span class="hljs-name">eac-cpf:entity</span>&#62;</span>
+        <span class="hljs-tag">&#60;<span class="hljs-name">rdf:description</span><span class="hljs-attr"> rdf:about</span>=<span class="hljs-string">"http://semanticweb.org/apollod11/MareTranquillitatis"</span>&#62;</span>
+          <span class="hljs-tag">&#60;<span class="hljs-name">eac-cpf:entity</span>&#62;Place<span class="hljs-tag">&#60;/</span><span class="hljs-name">eac-cpf:entity</span>&#62;</span>
           </span><span class="hljs-tag">&#60;<span class="hljs-name">gn:name</span>&#62;Mare Tranquillitatis&#60;/<span class="hljs-name">gn:name</span>&#62;</span>
           <span class="hljs-tag">&#60;<span class="hljs-name">gn:alternateName</span>&#62;</span>Sea of Tranquillity<span class="hljs-tag">&#60;/<span class="hljs-name">gn:alternateName</span>&#62;</span>
            <span class="hljs-tag">&#60;<span class="hljs-name">gn:alternateName</span>&#62;</span>Sea of Tranquility<span class="hljs-tag">&#60;/<span class="hljs-name">gn:alternateName</span>&#62;</span>
@@ -2726,6 +2708,7 @@
     </code>
   </pre>
   </div>
+
 </section>
 
 <!-- DATA CONNECTION -->

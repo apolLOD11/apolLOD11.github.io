@@ -1415,3 +1415,30 @@ blockquote {
 .colored {
   color: #ce0000;
 }
+
+/* BOTTON DROPDOWN */
+
+button {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 13px;
+  outline: none;
+}
+
+#dropdownMenuButton {
+  float: right;
+  background: #ce0000;
+  padding: 0 5px 0 5px;
+  border-color: #ce0000;
+}
+
+#speciala {
+  padding: 4px 5px 6px 5px;
+  font-size: 15px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
