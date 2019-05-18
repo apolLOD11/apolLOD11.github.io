@@ -264,8 +264,8 @@ HERO 2
 
 #hero2 h1 {
   margin: 30px 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 42px;
+  font-weight: 140;
   line-height: 56px;
   text-transform: uppercase;
   color: #fff;
@@ -393,7 +393,7 @@ HERO 2
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   outline: none;
 }
 
@@ -1435,8 +1435,10 @@ button {
 }
 
 #speciala {
-  padding: 4px 5px 6px 5px;
+  padding: 2px 5px 2px 5px;
   font-size: 15px;
+  border-color: #ce0000;
+  background: #ce0000;
 }
 
 .dropdown-toggle::after {
