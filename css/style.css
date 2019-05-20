@@ -1444,3 +1444,8 @@ button {
 .dropdown-toggle::after {
   display: none;
 }
+
+#speciala:hover {
+  background-color: #0000;
+  border-color: #0000;
+}
