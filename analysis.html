@@ -361,7 +361,7 @@
                   <td>&ltpbcoreCreator&gt</td>
                   <td>1XX: Main Entry Fields - 100 - Main Entry - $a Personal Name</td>
                   <td>12.1F. Statements of responsibility</td>
-                  <td>&ltname&gt</td>
+                  <td>&ltartist&gt&ltname&gt</td>
                   <td>&ltdc:agent&gt</td>
                 </tr>
               </tbody>
@@ -374,7 +374,7 @@
                   <td>&ltpbcoreContributor&gt</td>
                   <td>70X-75X - Added Entry Fields - General Information - 700 Personal Name - 710 Corporate Name</td>
                   <td>12.4D. Name of publisher, distributor, etc.</td>
-                  <td>&ltname&gt</td>
+                  <td></td>
                   <td>&ltcore:Person&gt &ltebucore:Crew&gt</td>
                 </tr>
               </tbody>
@@ -458,7 +458,7 @@
                   <td>&ltpbcoreAssetDate&gt</td>
                   <td>25X-28X: Edition, Imprint, Etc. Fields - 264 - Production, Publication, Distribution, Manufacture, and Copyright Notice (R) - $c Date of production</td>
                   <td>12.4B. Date(s) of creation</td>
-                  <td>&ltrelease-event&gt&ltdate&gt</td>
+                  <td></td>
                   <td>&ltebucore:idDateOfCreation&gt</td>
                 </tr>
               </tbody>
@@ -471,7 +471,7 @@
                   <td>&ltpbcoreAssetDate&gt</td>
                   <td>25X-28X: Edition, Imprint, Etc. Fields - 264 - Production, Publication, Distribution, Manufacture, and Copyright Notice (R) - $c Date of production</td>
                   <td>12.4F. Date of publication, distribution, etc.</td>
-                  <td>&ltrelease&gt&ltdate&gt</td>
+                  <td>&ltrelease-event&gt&ltdate&gt</td>
                   <td>&ltebucore:publicationStartDateTime&gt</td>
                 </tr>
               </tbody>
@@ -555,7 +555,7 @@
               <tbody>
                 <tr>
                   <td><b>what is the content of the item?</b></td>
-                  <td></td>
+                  <td>&ltdc:subject&gt</td>
                   <td></td>
                   <td>7.7 Notes relating to the contents</td>
                   <td>&ltpbcoreGenre&gt</td>
@@ -568,19 +568,19 @@
               <tbody>
                 <tr>
                   <td><b>what is the format of the item?</b></td>
-                  <td>&ltdc:type&gt</td>
+                  <td>&ltdc:format&gt</td>
                   <td>&ltedm:hasType&gt</td>
                   <td></td>
                   <td>&ltpbcoreInstantiation&gt</td>
                   <td>3XX: Physical Description, Etc. Fields - 300 - Physical Description - $a Extent - $b Other physical details - $c Dimensions</td>
                   <td>12.5C. Other physical details - 12.5D. Dimensions - 12.5E. Accompanying material</td>
-                  <td>&ltmedium&gt</td>
+                  <td>&ltmedium&gt&ltformat&gt</td>
                   <td>&ltebucore:Format&gt&ltebucore:Track&gt</td>
                 </tr>
               </tbody>
               <tbody>
                 <tr>
-                  <td><b>what the item is part of?</b></td>
+                  <td><b>what is the item part of?</b></td>
                   <td></td>
                   <td>&ltdc:isPartOf&gt</td>
                   <td></td>
@@ -594,7 +594,7 @@
               <tbody>
                 <tr>
                   <td><b>what is the summary of the subject?</b></td>
-                  <td></td>
+                  <td>&ltdc:abstract&gt</td>
                   <td></td>
                   <td>7.10.2 Notes providing a summary</td>
                   <td></td>
