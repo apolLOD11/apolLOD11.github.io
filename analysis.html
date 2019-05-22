@@ -637,7 +637,7 @@
           <hr>
           <br>
           <h3><b>DATE</b></h3>
-          <p>When it comes to date, we decided to consult various ontologies and vocabularies that could help us represent different aspects of time, such as date format, relation between date and the event and so on. Consequently, we directed our attention to distinguish distinct time/date features. To be more precise, we used ontologies and vocabularies such as EAD, CIDOC-CRM (Conceptual Reference Model) and FOAF.</p>
+          <p>When it comes to date, we decided to consult various ontologies and vocabularies that could help us represent different aspects of time, such as date format, relation between date and the concept and so on. Consequently, we directed our attention to distinguish distinct time/date features. To be more precise, we used ontologies and vocabularies such as EAD, CIDOC-CRM (Conceptual Reference Model) and FOAF.</p>
           <hr>
           <br>
           <h3><b>CONCEPT</b></h3>
@@ -1010,16 +1010,16 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>what is the date format?</b></td>
+                    <td><b>what is the verified format of the date?</b></td>
                     <td>ead:date</td>
                     <td>EAD</td>
                   </tr>
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>what is the relation between the date and the event?</b></td>
-                    <td>crm:E53_place</td>
-                    <td>CIDOC-CRM</td>
+                    <td><b>what is the relation between the date and the concept?</b></td>
+                    <td>dcterms:relation</td>
+                    <td>DC Terms</td>
                   </tr>
                 </tbody>
                 <tbody>
@@ -2034,8 +2034,8 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>what is the relation between the date and the event?</b></td>
-                    <td>crm:E53_place</td>
+                    <td><b>what is the relation between the date and the concept?</b></td>
+                    <td>dcterms:relation</td>
                     <td>Starting date</td>
                   </tr>
                 </tbody>
@@ -2085,8 +2085,8 @@
                 </tbody>
                 <tbody>
                   <tr>
-                    <td><b>what is the relation between the date and the event?</b></td>
-                    <td>crm:E53_place</td>
+                    <td><b>what is the relation between the date and the concept?</b></td>
+                    <td>dcterms:relation</td>
                     <td>Target date</td>
                   </tr>
                 </tbody>
@@ -2542,7 +2542,8 @@
         <li><p>URI: <span class="colored">http://semanticweb.og/apollod11/Mare Tranquillitatis</span></p></li>
         <li><p><span class="colored">foaf:isPrimaryTopicOf rdf:resource="https://en.wikipedia.org/wiki/MareTranquillitatis"</span><br>
         The <b>FOAF</b> property connects our URI with its dedicated Wikipedia page.</p></li>
-        <li><p><span class="colored">owl:sameAs rdf:resource="http://dbpedia.org/page/Mare_Tranquillitatis"</span><br>
+        <li><p><span class="colored">owl:sameAs rdf:resource="http://dbpedia.org/page/Mare_Tranquillitatis"
+        owl:sameAs rdf:resource="http://id.loc.gov/authorities/subjects/sh85136863"</span><br>
         This <b>OWL</b> property we have created identity relations between our entity and controlled authorities in <b>DBpedia</b>.</p></li>
       </ul> 
       <hr><br>
@@ -2551,7 +2552,7 @@
         <li><p>URI: <span class="colored">http://semanticweb.og/apollod11/FirstHumanSpaceflight</span></p></li>
         <li><p><span class="colored">foaf:isPrimaryTopicOf rdf:resource="https://en.wikipedia.org/wiki/MareTranquillitatis"</span><br>
         The <b>FOAF</b> property connects our URI with its dedicated Wikipedia page.</p></li>
-        <li><p><span class="colored">owl:sameAs rdf:resource="http://dbpedia.org/page/Mare_Tranquillitatis"</span><br>
+        <li><p><span class="colored">owl:sameAs rdf:resource="http://dbpedia.org/page/Vostok_1"</span><br>
         This <b>OWL</b> property we have created identity relations between our entity and controlled authorities in <b>DBpedia</b>, which refers to the <em>Vostok Space Mission</em>.</p></li>
         <li><p><span class="colored">rdfs:seeAlso rdf:resource="http://vocab.getty.edu/ulan/500342574"</span><br>
         This <b>RDF Schema</b> property is used to indicate a resource that might provide additional information about our URI.</p></li>
